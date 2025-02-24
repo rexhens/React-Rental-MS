@@ -17,6 +17,7 @@ namespace CarRentalManagmentSystem.Models
         public required string DriversLicenseNo { get; set; }
         [Column("MailAdress")]
         public string? Email { get; set; }
+        public required string Password { get; set; }
 
     }
 }

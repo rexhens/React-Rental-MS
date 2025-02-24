@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\FullProjectCarRentalMS\\React-Rental-MS\\Back-side\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\FullProjectCarRentalMS\\React-Rental-MS\\Back-side\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj": {
+    "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\FullProjectCarRentalMS\\React-Rental-MS\\Back-side\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj",
         "projectName": "CarRentalManagmentSystem",
-        "projectPath": "C:\\Users\\User\\Desktop\\FullProjectCarRentalMS\\React-Rental-MS\\Back-side\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\FullProjectCarRentalMS\\React-Rental-MS\\Back-side\\CarRentalManagmentSystem\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,9 +38,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -52,21 +47,19 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.2, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[9.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Polybioz.HtmlRenderer.PdfSharp.Core": {
               "target": "Package",
               "version": "[1.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -92,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

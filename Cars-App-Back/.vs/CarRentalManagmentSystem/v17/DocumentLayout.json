@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\front\\react-rental-ms\\cars-app-back\\carrentalmanagmentsystem\\models\\apirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5DC5538-A3D7-4B6D-9880-A0FF81A6A1B8}|CarRentalManagmentSystem\\CarRentalManagmentSystem.csproj|solutionrelative:carrentalmanagmentsystem\\models\\apirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\appsettings.json",
+              "RelativeToolTip": "CarRentalManagmentSystem\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-22T11:15:01.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Controllers\\ReservationsController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Controllers\\ReservationsController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA2wBkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T14:28:54.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Program.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Program.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T13:45:53.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Controllers\\CarsController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAuwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T22:06:08.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Models\\Client.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Models\\Client.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T21:33:46.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiRequest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Models\\ApiRequest.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Models\\ApiRequest.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Models\\ApiRequest.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Models\\ApiRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T14:48:24.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "CarRentalManagmentSystem\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Front\\React-Rental-MS\\Cars-App-Back\\CarRentalManagmentSystem\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "CarRentalManagmentSystem\\Controllers\\ClientsController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAkwFcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T21:34:43.49Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

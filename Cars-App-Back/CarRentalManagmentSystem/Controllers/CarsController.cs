@@ -4,7 +4,6 @@ using CarRentalManagmentSystem.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Azure.Core;
 
 namespace CarRentalManagmentSystem.Controllers
 {
@@ -22,6 +21,11 @@ namespace CarRentalManagmentSystem.Controllers
         [Route("get_cars")]
         public IActionResult GetAllCars()
         {
+            var apiKey = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            if (string.IsNullOrEmpty(apiKey) || !IsValidApiKey(apiKey))
+            {
+                return Unauthorized("Invalid API key");
+            }
             var cars = _context.Cars.ToList();
             if (cars.Any())
             {
@@ -51,7 +55,14 @@ namespace CarRentalManagmentSystem.Controllers
             return Ok(new { Message = "There is no car added yet" });
         }
 
-
+        private bool IsValidApiKey(string apiKey)
+        {
+            if (apiKey != ClientsController.publicApiKey)
+            {
+                return false;
+            }
+            return true;
+        }
         [HttpPost]
         [Route("add")]
         public async Task<IActionResult> AddCar([FromForm] CarCreateRequest request)

@@ -1,4 +1,6 @@
 ﻿using System.Security.AccessControl;
+using System.Security.Cryptography;
+using System.Text;
 using CarRentalManagmentSystem.Data;
 using CarRentalManagmentSystem.Models;
 using Microsoft.AspNetCore.Http;
@@ -10,10 +12,44 @@ namespace CarRentalManagmentSystem.Controllers
     [ApiController]
     public class ClientsController : ControllerBase
     {
+        public static string publicApiKey = "";
         private readonly AppDbContext _context;
         public ClientsController(AppDbContext context)
         {
             _context = context;
+        }
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginRequest request)
+        {
+            var users = _context.Clients.ToList();
+            foreach (var user in users)
+            {
+                if (user.Password == request.Password && user.PersonalNumber == request.PersonalNo)
+                {
+                    var apiKey = GenerateApiKey();
+                    publicApiKey = apiKey;
+                    return Ok(new { ApiKey = apiKey });
+                }
+            }
+
+            return Unauthorized("Invalid credentials.");
+        }
+
+        public class LoginRequest
+        {
+            public string PersonalNo { get; set; }
+            public string Password { get; set; }
+        }
+
+        // Generate a unique API Key
+        private string GenerateApiKey()
+        {
+            using (var sha256 = SHA256.Create())
+            {
+                var keyData = Guid.NewGuid().ToString();
+                var hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(keyData));
+                return Convert.ToBase64String(hashBytes);
+            }
         }
         [HttpGet]
         [Route("GetAll")]
@@ -24,32 +60,28 @@ namespace CarRentalManagmentSystem.Controllers
         }
         [HttpPost]
         [Route("Add")]
-        public IActionResult AddNewClient(string personalNumber,string driversLicenseNo, string name, string surname, string phoneNum, string? email)
+        public IActionResult AddNewClient([FromBody]Client clientReq)
         {
-            var exists = _context.Clients.Any(x => x.PersonalNumber == personalNumber);
+            var exists = _context.Clients.Any(x => x.PersonalNumber == clientReq.PersonalNumber);
             if (exists)
             {
                 return BadRequest("This client already exists!");
             }
-            var validate = ValidateClient(personalNumber,driversLicenseNo,name,surname,phoneNum);
+            var validate = ValidateClient(clientReq.PersonalNumber,clientReq.DriversLicenseNo,clientReq.Name,clientReq.Surname,clientReq.PersonalNumber);
             if (validate != "Ok")
             {
                 return BadRequest(validate);
             }
-            if (string.IsNullOrEmpty(personalNumber) || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) ||
-                string.IsNullOrEmpty(phoneNum))
+            
+            if (clientReq.Email == null)
             {
-                return BadRequest("Fields cannot be empty!");
-            }
-            if (email == null)
-            {
-                var client_no_mail = new Client { PersonalNumber = personalNumber, DriversLicenseNo = driversLicenseNo, Name = name, Surname = surname, PhoneNum = phoneNum };
+                var client_no_mail = new Client { PersonalNumber = clientReq.PersonalNumber, DriversLicenseNo = clientReq.DriversLicenseNo, Name = clientReq.Name, Surname = clientReq.Surname, PhoneNum = clientReq.PhoneNum, Password = clientReq.Password };
                 _context.Clients.Add(client_no_mail);
                 _context.SaveChanges();
                 return Ok(client_no_mail);
 
             }
-            var client = new Client { PersonalNumber = personalNumber, DriversLicenseNo = driversLicenseNo, Name = name, Surname = surname, PhoneNum = phoneNum, Email = email };
+            var client = new Client { PersonalNumber = clientReq.PersonalNumber, DriversLicenseNo = clientReq.DriversLicenseNo, Name = clientReq.Name, Surname = clientReq.Surname, PhoneNum = clientReq.PhoneNum, Email = clientReq.Email, Password = clientReq.Password };
             _context.Clients.Add(client);
             _context.SaveChanges();
             return Ok(client);
@@ -91,14 +123,27 @@ namespace CarRentalManagmentSystem.Controllers
         [Route("find_by_personal_no/{personalNumber}")]
         public IActionResult GetClientByPersonalNumber(string personalNumber)
         {
-            var existingClient = _context.Clients.FirstOrDefault(x => x.PersonalNumber == personalNumber);
-            if (existingClient == null)
+            try
             {
-                return BadRequest("This client does not exist!");
-            }
-            return Ok(existingClient);
+                var existingClient = _context.Clients.FirstOrDefault(x => x.PersonalNumber == personalNumber);
 
+                // If client does not exist, return a 404 status code with an appropriate error message
+                if (existingClient == null)
+                {
+                    return NotFound(new { message = "This client does not exist!" });
+                }
+
+                // Return the client data with a 200 OK status code
+                return Ok(existingClient);
+            }
+            catch (Exception ex)
+            {
+                // Log exception if necessary
+                return StatusCode(500, new { message = "Internal server error", error = ex.Message });
+            }
         }
+
+
         [HttpGet]
         [Route("find_by_drivers_license_no/{driversLicenseNumber}")]
         public IActionResult GetClientByDriversLicenseNumber(string driversLicenseNumber)

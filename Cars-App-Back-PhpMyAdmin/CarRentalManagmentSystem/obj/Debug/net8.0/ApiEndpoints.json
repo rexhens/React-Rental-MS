@@ -1,0 +1,446 @@
+[
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "AddCar",
+    "RelativePath": "api/Cars/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearProduction",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DailyPrice",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PlateNum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetCarsOfSameModel",
+    "RelativePath": "api/Cars/cars_same/{model}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetCarsOfSameCategory",
+    "RelativePath": "api/Cars/category_id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetCarsOfSameCategory",
+    "RelativePath": "api/Cars/category/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "DeleteCar",
+    "RelativePath": "api/Cars/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetCarByPlateNr",
+    "RelativePath": "api/Cars/get_by/{plate_nr}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "plate_nr",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetAllCars",
+    "RelativePath": "api/Cars/get_cars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "GetCarPhoto",
+    "RelativePath": "api/Cars/get_photo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CarsController",
+    "Method": "UpdateCarAsync",
+    "RelativePath": "api/Cars/update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Model",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearProduction",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DailyPrice",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "CategoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PlateNum",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CategoriesController",
+    "Method": "AddNewCategory",
+    "RelativePath": "api/Categories/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CategoriesController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Categories/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CategoriesController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categories/get/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CategoriesController",
+    "Method": "GetAllCategories",
+    "RelativePath": "api/Categories/getAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.CategoriesController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Categories/getByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "AddNewClient",
+    "RelativePath": "api/Clients/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "driversLicenseNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "surname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "phoneNum",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "DeleteClient",
+    "RelativePath": "api/Clients/Delete/{personalNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "GetClientByDriversLicenseNumber",
+    "RelativePath": "api/Clients/find_by_drivers_license_no/{driversLicenseNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "driversLicenseNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "GetClientByPersonalNumber",
+    "RelativePath": "api/Clients/find_by_personal_no/{personalNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "GetAllClients",
+    "RelativePath": "api/Clients/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ClientsController",
+    "Method": "UpdateClient",
+    "RelativePath": "api/Clients/Update/{personalNumber}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "personalNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "client",
+        "Type": "CarRentalManagmentSystem.Models.Client",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ReservationsController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/Reservations/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClientId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CarId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ReservationsController",
+    "Method": "GetAllReservations",
+    "RelativePath": "api/Reservations/get_all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CarRentalManagmentSystem.Controllers.ReservationsController",
+    "Method": "GeneratePDF",
+    "RelativePath": "api/Reservations/pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reservationId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
